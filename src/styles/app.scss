@@ -14,5 +14,22 @@ h2,
 h3 {
   color: rgb(48, 46, 46);
 }
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+.App {
+  transition: all 0.5s ease;
+}
+
+.library-active {
+  margin-left: 30%;
+}
+
 @import "./song";
 @import "./player";
+@import "./_library";
+@import "./_nav.scss";
