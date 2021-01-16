@@ -1,11 +1,11 @@
 .library {
   position: fixed;
+  box-shadow: 2px 2px 50px rgb(210, 210, 210);
+  border-radius: 1rem;
   top: 0;
   left: 0;
   width: 20rem;
   height: 100%;
-  box-shadow: 2px 2px 50px rgb(210, 210, 210);
-  border-radius: 1rem;
   overflow: scroll;
   background: white;
   transform: translateX(-100%);
@@ -14,21 +14,17 @@
 
   h2 {
     padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
-
 .library-song {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-bottom: 3rem;
-  transition: all 0.5s ease;
+  padding: 1rem 2rem 1rem 2rem;
   cursor: pointer;
+  transition: all 0.75s ease-out;
+
   img {
-    width: 65%;
+    width: 30%;
   }
   &:hover {
     background: rgb(232, 240, 243);
@@ -40,17 +36,18 @@
 }
 
 .song-description {
+  padding-left: 1rem;
   h3 {
     font-size: 1rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
 }
 
 *::-webkit-scrollbar {
@@ -62,7 +59,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.5);
+  background-color: rgba(155, 155, 155, 0.7);
   border-radius: 20px;
   border: transparent;
 }

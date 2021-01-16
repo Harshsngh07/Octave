@@ -11,7 +11,7 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
     <nav>
       <h1>Octave</h1>
       <button
-        className={`libraryStatus? ".active-library": ""`}
+        className={`libraryStatus? ".library-active": ""`}
         onClick={toggle}
       >
         Library
